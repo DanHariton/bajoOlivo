@@ -1,0 +1,38 @@
+{% extends 'admin/layout.nav.html.twig' %}
+
+{% block title %}Car List{% endblock %}
+
+{% block content %}
+    <h1 class="h3 mb-2 text-gray-800">Cars</h1>
+    <p class="mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aspernatur aut commodi consequuntur
+        eligendi est facere fugit impedit ipsum, laboriosam numquam quaerat quod ratione reiciendis rem suscipit vero
+        voluptatum!
+    </p>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Cars</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered data-table">
+                    <thead>
+                    <tr>
+                        <th>Znacka</th>
+                        <th>Model</th>
+                        <th>Cena</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Lexus</td>
+                        <td>CT 200h Hybrid</td>
+                        <td>200 000</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

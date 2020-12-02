@@ -1,0 +1,235 @@
+@import "~startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.css"
+@import "~normalize.css/normalize.css"
+@import "~bootstrap/dist/css/bootstrap.css"
+@import '~select2/dist/css/select2.css'
+@import "~@ttskch/select2-bootstrap4-theme/dist/select2-bootstrap4.css"
+
+@font-face
+  font-family DalaFloda
+  src url("./font/DalaFloda-Medium_0.otf")
+
+@font-face
+  font-family WorkSansRegular
+  src url('./font/WorkSans-Regular.ttf')
+
+@font-face
+  font-family WorkSansSemiBold
+  src url("./font/WorkSans-SemiBold.ttf")
+
+body
+  font-family WorkSansRegular
+
+#content
+  background url("./img/4k-response.jpg") no-repeat center center fixed;
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+
+.logo
+  width 150px
+
+.wrapper
+  margin-top 18%
+
+.font-semi-bold
+  font-family WorkSansSemiBold
+
+.font-dala
+  font-family DalaFloda
+
+.brand-name
+  width 30%
+
+.font-size-13
+  font-size 3rem
+
+.font-size-22
+  font-size 4.2rem
+
+.button
+  padding 10px 15px
+  border 1px solid #FFFFFF
+  color #FFFFFF
+
+.button:hover
+  background-color #FFFFFF
+  color #000
+  text-decoration none
+  transition all 0.8s ease
+
+#wrapper
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100% - 200px);
+  justify-content: space-between;
+
+.contact-wrapper
+  margin-bottom 2%
+
+.contact:after
+  content: "";
+  display: block
+  margin: 0 auto;
+  width: 3%;
+  padding-top: 15px;
+  border-bottom: 1px solid white;
+
+@media screen and (max-width: 2560px)
+  #content
+    background url("./img/2560х1440.jpg") no-repeat center center fixed;
+
+  .wrapper
+    margin-top 15%
+
+  .font-size-13
+    font-size 2rem
+
+  .font-size-22
+    font-size 3.2rem
+
+@media screen and (max-width: 1920px)
+  #content
+    background url("./img/background.jpg") no-repeat center center fixed;
+
+  .brand-name
+    width 32%
+
+  .wrapper
+    margin-top 11%
+
+  .font-size-13
+    font-size 1.3rem
+
+  .font-size-22
+    font-size 2.2rem
+
+@media screen and (max-width: 1366px)
+  #content
+    background url("./img/1366x768.jpg") no-repeat center center fixed;
+
+  .wrapper
+    margin-top 7%
+
+  .font-size-13
+    font-size 1.15rem
+
+  .font-size-22
+    font-size 2rem
+
+  .contact:after
+    padding-top 8px
+
+  .contact-wrapper
+    margin-bottom 3%
+
+@media screen and (max-width: 1024px)
+  #content
+    background url("./img/1024x768.jpg") no-repeat center center fixed;
+
+  .wrapper
+    margin-top 11%
+
+  .brand-name
+    width 38%
+
+@media screen and (max-width: 992px)
+  .contact:after
+    width 5%
+
+@media screen and (max-width: 800px)
+  #content
+    background url("./img/800x600.jpg") no-repeat center center fixed;
+
+  .brand-name
+    width 38%
+
+  .wrapper
+    margin-top 5%
+
+  .font-size-13
+    font-size 1rem
+
+  .font-size-22
+    font-size 1.7rem
+
+
+@media screen and (max-width: 768px)
+  .contact:after
+    width 8%
+
+@media screen and (max-width: 576px)
+  #content
+    background url("./img/background-response-big.jpg") no-repeat center center fixed;
+
+  #wrapper
+    min-height calc(100% - 160px)
+
+  .wrapper
+    margin-top 66%
+
+  .brand-name
+    width 60%
+
+  .font-size-13
+    font-size .8rem
+
+  .font-size-22
+    font-size 1.7rem
+
+  header
+    .ml-4
+      margin-left 0 !important
+    .mt-5
+      margin-top 10px !important
+
+  .contact:after
+    width 8%
+
+  .mr-5
+    margin-right 10% !important
+
+  .ml-5
+    margin-left 10% !important
+
+@media screen and (max-width: 414px)
+  #content
+    background url("./img/414x736.jpg") no-repeat center center fixed;
+
+  .logo
+    width 100px
+
+  #wrapper
+    min-height calc(100% - 110px)
+
+  .wrapper
+    margin-top 83%
+
+  .brand-name
+    width 80%
+    margin-bottom 5px !important
+
+  .custom-margin
+    margin-bottom 15px !important
+
+  .contact-wrapper
+    h3
+      margin-bottom 10px !important
+
+  .contact:after
+    padding-top 2px
+
+@media screen and (max-width: 375px)
+  #content
+    background url("./img/375x667.jpg") no-repeat center center fixed;
+
+  .wrapper
+    margin-top 80%
+
+@media screen and (max-width: 320px)
+  #content
+    background url("./img/320x568.jpg") no-repeat center center fixed;
+
+  .wrapper
+    margin-top 74%

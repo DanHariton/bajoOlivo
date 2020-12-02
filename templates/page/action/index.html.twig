@@ -1,0 +1,26 @@
+{% extends 'page/layout.html.twig' %}
+
+{% block title %}Index Page{% endblock %}
+
+{% block body %}
+    <div id="content">
+        <header>
+            <img class="mt-5 ml-4 logo"  src="{{ asset('assets/page/img/logo.png') }}" alt="bajo olivo">
+        </header>
+        <div id="wrapper">
+            <section class="wrapper text-center text-white">
+                <img class="brand-name mb-3" src="{{ asset('assets/page/img/text-logo.png') }}" alt="bajo olivo">
+                <p class="font-semi-bold font-size-13 mb-0">{{ 'page.text1'|trans }}</p>
+                <p class="font-semi-bold font-size-13 mb-4 custom-margin">{{ 'page.text2'|trans }}</p>
+                <a class="button font-size-13" href="https://eshop.doobalu.cz/Olivovy-olej-c3_0_1.html" target="_blank">{{ 'page.button'|trans }}</a>
+            </section>
+            <section class="contact-wrapper">
+                <h3 class="text-white text-center mb-3 font-dala contact font-size-22">{{ 'page.contact'|trans }}</h3>
+                <div class="d-flex justify-content-center">
+                    <a href="tel:+420737031170" class="text-white mr-4 font-size-13">{{ 'page.tel'|trans }}</a>
+                    <a href="mailto: eshop@doobalu.cz" class="text-white ml-4 font-size-13">{{ 'page.email'|trans }}</a>
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}
